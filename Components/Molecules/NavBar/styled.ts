@@ -1,18 +1,11 @@
 import styled from "styled-components";
 
-interface SectionContainerProps {
+interface NavBarStyledProps {
   className: "center-col" | "center-row";
-  bgColor?: string;
 }
 
-export const SectionContainer = styled.section<SectionContainerProps>`
-  /* Background */
-  background: ${(p) => p.theme.background ?? p.bgColor};
-  /* Size  */
-  width: 100%;
-  min-height: 100%;
-  /* Position */
-
+export const NavBarStyled = styled.nav<NavBarStyledProps>`
+  gap: 20px;
   &.center-col {
     display: flex;
     justify-content: center;

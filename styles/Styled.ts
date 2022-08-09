@@ -14,6 +14,8 @@ declare module "styled-components" {
     colorFont: string;
     hrefLink: string;
     header_size: string;
+    sun_icon: string;
+    moon_icon: string;
     space: {
       padd_header: string;
     };

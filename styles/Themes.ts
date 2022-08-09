@@ -3,15 +3,19 @@ import { DefaultTheme } from "styled-components";
 export const defaultTheme: DefaultTheme = {
   type: "default",
   background: "#Ffff",
-  accent: "#dcf1fa", // cor princimal = main color
-  accentOff: "#16759e",
-  accentContrast: "#ffffff",
-  borderColor: "#ddda",
-  borderRadius: "12px",
   colorFont: "#444",
-  hrefLink: "#65b2ff",
+  accent: "#1879e6", // cor princimal = main color
+  accentContrast: "#ffffff",
+  accentOff: "#0c3c72",
+  borderColor: "#f62f5b",
+  borderRadius: "12px",
+  hrefLink: "#f62f5b",
   fontFamily: '"Roboto", sans serif',
-  header_size: "100px",
+  // "JetBrains Mono", monospace - "Poppins", sans serif
+  header_size: "70px",
+  // icon switch
+  sun_icon: "#fda847", // default #fda847
+  moon_icon: "#ffd", // default #ffd
   space: {
     padd_header: "40px 15px",
   },
@@ -24,16 +28,18 @@ export const defaultTheme: DefaultTheme = {
 
 export const darktTheme: DefaultTheme = {
   type: "dark",
-  background: "#073c54",
-  accent: "#0b628a",
-  accentOff: "#042535",
-  accentContrast: "#ccc",
-  borderColor: "#03202e",
-  borderRadius: "12px",
+  background: "#000",
   colorFont: "#eeeeee",
-  hrefLink: "##ffffff",
+  accent: "#1879e6",
+  accentContrast: "#ffffff",
+  accentOff: "#0c3c72",
+  borderColor: "#f7476e",
+  borderRadius: "12px",
+  hrefLink: "#f7476e",
   fontFamily: "",
-  header_size: "100px",
+  header_size: "70px",
+  sun_icon: "#fda847", //default #fda847
+  moon_icon: "#ffd", //default #ffd
   space: {
     padd_header: "40px 15px",
   },

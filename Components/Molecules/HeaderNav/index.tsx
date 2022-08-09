@@ -1,17 +1,18 @@
 import { Header } from './styled';
-import SwitcherTheme from '../../Atoms/SwitcherTheme';
-import { useChangeTheme } from '../../../Context/ChangeThemeContext';
+import { P } from '../../Atoms/P';
+import useReturnTheme from '../../../Hooks/useReturnTheme';
+import Menu from '../../Organisms/MainLayout/Menu';
 
 const HeaderNav: React.FC = () => {
-  const { isDark, onChangeTheme } = useChangeTheme()
+  const theme = useReturnTheme()
 
   return (
     <Header >
-      <SwitcherTheme
-        onChange={onChangeTheme}
-        checked={isDark}
-      />
+      <P
+        style={{ color: theme.accent }}
+      >Dev.AraujRafael</P>
 
+      <Menu hasTheme />
     </Header>
   )
 }

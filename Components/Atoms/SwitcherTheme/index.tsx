@@ -26,19 +26,19 @@ const SwitcherTheme: React.FC<SwitcherThemeProps> = ({
         <Wrapper className='center-col'
           style={{ width: "100%", height: "100%" }}
         >
-          <BsSunFill size={18} color="#fda847" />
+          <BsSunFill size={18} color={theme.sun_icon} />
         </Wrapper>
       }
       uncheckedIcon={
         <Wrapper className='center-col'
           style={{ width: "100%", height: "100%" }}
         >
-          <BsMoonFill size={18} color="#ffd" />
+          <BsMoonFill size={18} color={theme.moon_icon} />
         </Wrapper>
       }
       // Color
-      offColor={"#6b6ba0"}
-      onColor={"#dcf5f5"}
+      offColor={theme.accentOff}
+      onColor={theme.accentContrast}
       onHandleColor={theme.accent}
       offHandleColor={theme.accent}
       alt="change theme"

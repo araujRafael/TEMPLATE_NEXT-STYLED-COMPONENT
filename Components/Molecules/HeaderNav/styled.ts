@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  background: ${(p) => p.theme.accent};
+  /* background: ${(p) => p.theme.accent}; */
   /*  */
   width: 100%;
   height: ${(p) => p.theme.header_size};

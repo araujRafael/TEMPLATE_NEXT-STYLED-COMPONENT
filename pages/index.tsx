@@ -1,5 +1,8 @@
 import type { NextPage } from 'next'
+import { Button } from '../Components/Atoms/Button'
 import { SectionContainer } from '../Components/Atoms/SectionContainer'
+import { Title } from '../Components/Atoms/Title'
+import { navLinks } from '../Constants/NavLinks'
 
 
 const Home: NextPage = () => {
@@ -12,10 +15,20 @@ const Home: NextPage = () => {
   return (
     <>
       <SectionContainer className='center-col' >
-        <h1>Hero</h1>
+        <Title>Hero</Title>
+        <Button>
+          Click here
+        </Button>
       </SectionContainer>
-      <SectionContainer className='center-col'  >
-        <h1>Second</h1>
+      <SectionContainer
+        id={navLinks[1].id}
+        className='center-col'  >
+        <Title>Second</Title>
+      </SectionContainer>
+      <SectionContainer
+        id={navLinks[2].id}
+        className='center-col'  >
+        <Title>Third</Title>
       </SectionContainer>
     </>
   )

@@ -11,9 +11,10 @@ export const GlobalStyles = createGlobalStyle`
     background-color:#555;
   }
   ::-webkit-scrollbar-thumb:hover{
-    background: #007fff;
+    background: ${(p) => p.theme.accent};
     transition: all 0.8s ease-out;
   }
+
   
   html{
     scroll-behavior: smooth;
