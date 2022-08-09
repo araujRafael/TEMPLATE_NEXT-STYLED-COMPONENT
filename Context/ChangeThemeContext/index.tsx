@@ -33,6 +33,7 @@ const ChangeThemeProvider: React.FC = ({
     setCookie(null, cookiesNames.isDarkCookie, String(e), {
       maxAge: 30 * 24 * 60 * 60,
       path: '/',
+      sameSite: "Lax"
     })
     setIsDark(e)
   }
