@@ -8,7 +8,7 @@ export const defaultTheme: DefaultTheme = {
   accentContrast: "#ffffff",
   accentOff: "#0c3c72",
   borderColor: "#f62f5b",
-  borderRadius: "12px",
+  borderRadius: "0px",
   hrefLink: "#f62f5b",
   fontFamily: '"Roboto", sans serif',
   // "JetBrains Mono", monospace - "Poppins", sans serif
@@ -34,7 +34,7 @@ export const darktTheme: DefaultTheme = {
   accentContrast: "#ffffff",
   accentOff: "#0c3c72",
   borderColor: "#f7476e",
-  borderRadius: "12px",
+  borderRadius: "0px",
   hrefLink: "#f7476e",
   fontFamily: "",
   header_size: "70px",

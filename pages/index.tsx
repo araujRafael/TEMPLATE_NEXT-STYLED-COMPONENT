@@ -2,6 +2,8 @@ import type { NextPage } from 'next'
 import { Button } from '../Components/Atoms/Button'
 import { SectionContainer } from '../Components/Atoms/SectionContainer'
 import { Title } from '../Components/Atoms/Title'
+import { Wrapper } from '../Components/Atoms/Wrapper'
+import InputBox from '../Components/Molecules/InputBox'
 import { navLinks } from '../Constants/NavLinks'
 
 
@@ -16,9 +18,18 @@ const Home: NextPage = () => {
     <>
       <SectionContainer className='center-col' >
         <Title>Hero</Title>
-        <Button>
-          Click here
-        </Button>
+        {/*  */}
+        <Wrapper
+          style={{ width: "400px", height: "min-content" }}
+          className="center-col"
+        >
+          <InputBox
+            type={"text"}
+            placeholder='Name' />
+          <Button>
+            Click here
+          </Button>
+        </Wrapper>
       </SectionContainer>
       <SectionContainer
         id={navLinks[1].id}
