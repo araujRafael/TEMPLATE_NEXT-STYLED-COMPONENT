@@ -17,7 +17,7 @@ const Menu: React.FC<MenuProps> = ({
     <NavBar hasTheme={hasTheme} >
       <Ul className='center-row'>
         {navLinks.map((x, i) => (
-          <li>
+          <li key={i.toString()} >
             <Href
               href={x.href}
               title={x.name}

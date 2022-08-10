@@ -22,12 +22,12 @@ const Home: NextPage = () => {
       </SectionContainer>
       <SectionContainer
         id={navLinks[1].id}
-        className='center-col'  >
+        className='center-col'>
         <Title>Second</Title>
       </SectionContainer>
       <SectionContainer
         id={navLinks[2].id}
-        className='center-col'  >
+        className='center-col'>
         <Title>Third</Title>
       </SectionContainer>
     </>
