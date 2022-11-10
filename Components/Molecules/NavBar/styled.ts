@@ -5,6 +5,10 @@ interface NavBarStyledProps {
 }
 
 export const NavBarStyled = styled.nav<NavBarStyledProps>`
+  background: ${(p) => p.theme.background};
+
+  padding: 0 10px;
+
   gap: 20px;
   &.center-col {
     display: flex;
@@ -17,5 +21,10 @@ export const NavBarStyled = styled.nav<NavBarStyledProps>`
     justify-content: center;
     align-items: center;
     flex-direction: row;
+  }
+
+  @media screen and (max-width: ${(p) => p.theme.mobile.md}) {
+    border: 2px solid ${(p) => p.theme.borderColor};
+    height: 100vh;
   }
 `;

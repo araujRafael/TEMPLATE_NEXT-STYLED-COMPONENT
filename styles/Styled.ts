@@ -24,5 +24,10 @@ declare module "styled-components" {
       normal: string;
       high: string;
     };
+    mobile: {
+      sm: string;
+      md: string;
+      xl: string;
+    };
   }
 }

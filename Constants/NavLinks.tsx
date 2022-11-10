@@ -1,4 +1,13 @@
-export const navLinks = [
+
+export type navLinksNames = "home" | "section 2" | "section 3"
+
+interface navLinksProps {
+  name: navLinksNames
+  href: string
+  id: string
+}
+
+export const navLinks: navLinksProps[] = [
   {
     name: "home",
     href: "/",

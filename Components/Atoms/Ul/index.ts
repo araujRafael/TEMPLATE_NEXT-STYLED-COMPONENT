@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface UlProps {
-  className: "center-col" | "center-row";
+  className?: "center-col" | "center-row";
 }
 
 export const Ul = styled.ul<UlProps>`

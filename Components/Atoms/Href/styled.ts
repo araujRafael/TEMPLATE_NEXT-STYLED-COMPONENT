@@ -6,4 +6,5 @@ interface AnchorProps {
 export const Anchor = styled.a<AnchorProps>`
   color: ${(p) => p.colorFont ?? p.theme.hrefLink};
   cursor: pointer;
+  white-space: nowrap;
 `;
